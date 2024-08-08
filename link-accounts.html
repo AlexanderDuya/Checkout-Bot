@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Accounts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Link Your Nike Accounts</h1>
+        <form id="linkAccountsForm">
+            <label for="nikeUsername">Nike Username:</label>
+            <input type="text" id="nikeUsername" name="nikeUsername" required>
+
+            <label for="nikePassword">Nike Password:</label>
+            <input type="password" id="nikePassword" name="nikePassword" required>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <input type="text" id="paymentMethod" name="paymentMethod" placeholder="Credit Card, PayPal, etc." required>
+
+            <label for="shippingAddress">Shipping Address:</label>
+            <textarea id="shippingAddress" name="shippingAddress" rows="4" required></textarea>
+
+            <button type="submit">Save Details</button>
+        </form>
+        <div class="button-link">
+            <a href="index.html">
+                <button type="button">Back to Main Page</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+

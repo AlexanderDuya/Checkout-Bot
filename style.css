@@ -1,0 +1,75 @@
+/* Base styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Container styling for centering content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 8px;
+    color: #b0b0b0;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Styling for links and button containers */
+a {
+    text-decoration: none;
+}
+
+.button-link {
+    display: inline-block;
+    text-align: center;
+}
