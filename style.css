@@ -9,43 +9,59 @@ body {
 
 /* Container styling for centering content */
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     background: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 /* Heading styling */
 h1 {
-    text-align: center;
     color: #e0e0e0;
 }
 
-/* Form styling */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Label styling */
-label {
-    margin-bottom: 8px;
+/* Paragraph styling */
+p {
     color: #b0b0b0;
 }
 
-/* Input and textarea styling */
-input[type="text"],
-input[type="password"],
-input[type="number"],
-textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
+/* Catalog section styling */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Catalog item styling */
+.catalog-item {
     background-color: #2c2c2c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.catalog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.catalog-item h2 {
     color: #e0e0e0;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.catalog-item p {
+    color: #b0b0b0;
+    margin: 5px 0;
 }
 
 /* Button styling */
@@ -56,8 +72,9 @@ button {
     background-color: #6200ea;
     color: #fff;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 10px;
     font-size: 16px;
+    display: inline-block;
 }
 
 button:hover {
@@ -71,5 +88,4 @@ a {
 
 .button-link {
     display: inline-block;
-    text-align: center;
 }

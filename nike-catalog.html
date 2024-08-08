@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const catalogContainer = document.getElementById('catalog');
+
+            // Placeholder for fetching Nike catalog data
+            fetch('https://api.example.com/nike-catalog') // Replace with actual API endpoint
+                .then(response => response.json())
+                .then(data => {
+                    // Example data handling
+                    const items = data.items; // Adjust according to actual API response
+                    let catalogHTML = '';
+
+                    items.forEach(item => {
+                        catalogHTML += `
+                            <div class="catalog-item">
+                                <img src="${item.imageUrl}" alt="${item.name}">
+                                <h2>${item.name}</h2>
+                                <p>${item.description}</p>
+                                <p><strong>$${item.price}</strong></p>
+                            </div>
+                        `;
+                    });
+
+                    catalogContainer.innerHTML = catalogHTML;
+                })
+                .catch(error => {
+                    console.error('Error fetching catalog data:', error);
+                    catalogContainer.innerHTML = '<p>Error loading catalog. Please try again later.</p>';
+                });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nike Catalog</h1>
+        <p>Browse the latest Nike products below.</p>
+        <div id="catalog" class="catalog">
+            <!-- Catalog items will be injected here by JavaScript -->
+        </div>
+        <div class="button-link">
+            <a href="dashboard.html">
+                <button type="button">Back to Dashboard</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

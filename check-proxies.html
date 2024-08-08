@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Proxy Speed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check Proxy Speed</h1>
+        <p>Enter the proxies you want to test below. Each proxy should be in the format <code>http://ip:port</code>.</p>
+        <form id="checkProxiesForm">
+            <label for="proxyList">Proxies (one per line):</label>
+            <textarea id="proxyList" name="proxyList" rows="10" placeholder="http://192.168.1.1:8080\nhttp://192.168.1.2:8080" required></textarea>
+            
+            <button type="submit">Check Proxies</button>
+        </form>
+        <div class="button-link">
+            <a href="dashboard.html">
+                <button type="button">Back to Dashboard</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
