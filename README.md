@@ -1,3 +1,5 @@
+hello i am shaan
+
 Checkout Bot - Incomplete! 
 Overview
 Welcome to the Checkout Bot repository! This project is developed by Alexander, Hadi and Shaan with the goal of enhancing our checkout experience and improving our technical skills. The bot automates and optimizes the checkout process, offering a suite of features designed to streamline purchasing and account management.
