@@ -4,6 +4,7 @@
     "express": "^4.19.2",
     "http-proxy-agent": "^7.0.2",
     "https-proxy-agent": "^7.0.5",
+    "proxy-agent": "^6.4.0",
     "puppeteer": "^23.0.2"
   }
 }
